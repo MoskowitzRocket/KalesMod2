@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "kmos:block/example_block"
+    }
+  }
+}

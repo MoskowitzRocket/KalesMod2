@@ -1,5 +1,6 @@
 package github.moskowitzrocket.kmos;
 
+import github.moskowitzrocket.kmos.init.Blockinit;
 import github.moskowitzrocket.kmos.init.Iteminit;
 import net.fabricmc.api.ModInitializer;
 
@@ -19,9 +20,10 @@ public class KalesMod implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Loading...");
 		Iteminit.load();
+		Blockinit.load();
 	}
 
 	public static Identifier id(String path) {
-		return Identifier.of(MOD_ID,path);
+		return Identifier.of(MOD_ID, path);
 	}
 }
