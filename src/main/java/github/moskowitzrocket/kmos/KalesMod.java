@@ -1,7 +1,9 @@
 package github.moskowitzrocket.kmos;
 
+import github.moskowitzrocket.kmos.init.Iteminit;
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,10 +17,11 @@ public class KalesMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
+		LOGGER.info("Loading...");
+		Iteminit.load();
+	}
 
-		LOGGER.info("Hello Fabric world!");
+	public static Identifier id(String path) {
+		return Identifier.of(MOD_ID,path);
 	}
 }
