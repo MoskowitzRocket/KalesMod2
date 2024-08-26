@@ -5,7 +5,6 @@
 	"name": "Kale's Mod",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -37,8 +36,5 @@
 		"minecraft": "~1.21.1",
 		"java": ">=21",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }
